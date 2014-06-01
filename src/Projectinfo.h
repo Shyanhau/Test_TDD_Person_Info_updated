@@ -12,9 +12,10 @@ typedef struct PersonInfo_t
 	
 }PersonInfo;
 
-
-
-void main();
-
+int setFirstName(PersonInfo *info, char *name);
+int setLastName(PersonInfo *info, char *name);
+int setAge(PersonInfo *info , int age);
+int setHeight(PersonInfo *info, float height);
+int setTelephone(PersonInfo *info, unsigned long int telephone);
 
 #endif // Projectinfo_H

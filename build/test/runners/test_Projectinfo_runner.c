@@ -30,7 +30,24 @@ char* GlobalOrderError;
 //=======External Functions This Runner Calls=====
 extern void setUp(void);
 extern void tearDown(void);
-extern void test_setAge_less_than_0_should_return_invalid(void);
+extern void test_setAge_less_than_0_should_return_zero(void);
+extern void test_setAge_more_than_130_should_return_zero(void);
+extern void test_setAge_more_than_0_but_less_than_130_which_is_55_should_return_one(void);
+extern void test_setHeight_more_than_0m_and_less_than_three_meter_should_return_one(void);
+extern void test_setHeight_more_than_3m_should_return_zero(void);
+extern void test_setHeight_less_than_0_should_return_zero(void);
+extern void test_setTelephone_less_than_10000000_should_return_one(void);
+extern void test_setTelephone_more_than_99999999_should_return_zero(void);
+extern void test_setTelephone_more_than_10000000_but_less_than_99999999_which_is_10000001_should_return_one(void);
+extern void test_setTelephone_more_than_10000000_but_less_than_99999999_which_is_99999998_should_return_one(void);
+extern void test_setFirstName_no_name_input_should_return_zero(void);
+extern void test_setFirstName_given_shyanhau_should_return_one(void);
+extern void test_setFirstName_between_name_contain_space_should_return_one(void);
+extern void test_setFirstName_more_than_20_charaters_should_return_zero(void);
+extern void test_setLastName_no_name_input_should_return_zero(void);
+extern void test_setLastName_given_shyanhau_should_return_one(void);
+extern void test_setLastName_between_name_contain_space_should_return_one(void);
+extern void test_setLastName_more_than_20_charaters_should_return_zero(void);
 
 
 //=======Test Reset Option=====
@@ -46,7 +63,24 @@ int main(void)
 {
   Unity.TestFile = "test_Projectinfo.c";
   UnityBegin();
-  RUN_TEST(test_setAge_less_than_0_should_return_invalid, 12);
+  RUN_TEST(test_setAge_less_than_0_should_return_zero, 12);
+  RUN_TEST(test_setAge_more_than_130_should_return_zero, 22);
+  RUN_TEST(test_setAge_more_than_0_but_less_than_130_which_is_55_should_return_one, 32);
+  RUN_TEST(test_setHeight_more_than_0m_and_less_than_three_meter_should_return_one, 42);
+  RUN_TEST(test_setHeight_more_than_3m_should_return_zero, 52);
+  RUN_TEST(test_setHeight_less_than_0_should_return_zero, 62);
+  RUN_TEST(test_setTelephone_less_than_10000000_should_return_one, 72);
+  RUN_TEST(test_setTelephone_more_than_99999999_should_return_zero, 82);
+  RUN_TEST(test_setTelephone_more_than_10000000_but_less_than_99999999_which_is_10000001_should_return_one, 92);
+  RUN_TEST(test_setTelephone_more_than_10000000_but_less_than_99999999_which_is_99999998_should_return_one, 102);
+  RUN_TEST(test_setFirstName_no_name_input_should_return_zero, 112);
+  RUN_TEST(test_setFirstName_given_shyanhau_should_return_one, 122);
+  RUN_TEST(test_setFirstName_between_name_contain_space_should_return_one, 130);
+  RUN_TEST(test_setFirstName_more_than_20_charaters_should_return_zero, 139);
+  RUN_TEST(test_setLastName_no_name_input_should_return_zero, 148);
+  RUN_TEST(test_setLastName_given_shyanhau_should_return_one, 158);
+  RUN_TEST(test_setLastName_between_name_contain_space_should_return_one, 168);
+  RUN_TEST(test_setLastName_more_than_20_charaters_should_return_zero, 178);
 
   return (UnityEnd());
 }

@@ -1,0 +1,71 @@
+---
+:source:
+  :path: test
+  :file: test_Projectinfo.c
+:successes:
+- :test: test_setAge_less_than_0_should_return_zero
+  :line: 12
+  :message: ''
+- :test: test_setAge_more_than_130_should_return_zero
+  :line: 22
+  :message: ''
+- :test: test_setAge_more_than_0_but_less_than_130_which_is_55_should_return_one
+  :line: 32
+  :message: ''
+- :test: test_setHeight_more_than_0m_and_less_than_three_meter_should_return_one
+  :line: 42
+  :message: ''
+- :test: test_setHeight_more_than_3m_should_return_zero
+  :line: 52
+  :message: ''
+- :test: test_setHeight_less_than_0_should_return_zero
+  :line: 62
+  :message: ''
+- :test: test_setTelephone_less_than_10000000_should_return_one
+  :line: 72
+  :message: ''
+- :test: test_setTelephone_more_than_99999999_should_return_zero
+  :line: 82
+  :message: ''
+- :test: test_setTelephone_more_than_10000000_but_less_than_99999999_which_is_10000001_should_return_one
+  :line: 92
+  :message: ''
+- :test: test_setTelephone_more_than_10000000_but_less_than_99999999_which_is_99999998_should_return_one
+  :line: 102
+  :message: ''
+- :test: test_setFirstName_no_name_input_should_return_zero
+  :line: 112
+  :message: ''
+- :test: test_setFirstName_given_shyanhau_should_return_one
+  :line: 122
+  :message: ''
+- :test: test_setFirstName_between_name_contain_space_should_return_one
+  :line: 130
+  :message: ''
+- :test: test_setFirstName_more_than_20_charaters_should_return_zero
+  :line: 139
+  :message: ''
+- :test: test_setLastName_no_name_input_should_return_zero
+  :line: 148
+  :message: ''
+- :test: test_setLastName_given_shyanhau_should_return_one
+  :line: 158
+  :message: ''
+- :test: test_setLastName_between_name_contain_space_should_return_one
+  :line: 168
+  :message: ''
+- :test: test_setLastName_more_than_20_charaters_should_return_zero
+  :line: 178
+  :message: ''
+:failures: []
+:ignores: []
+:counts:
+  :total: 18
+  :passed: 18
+  :failed: 0
+  :ignored: 0
+:stdout:
+- There is no name entered for first name!!
+- There is more than 20 characters!!
+- There is no name entered for last name!!
+- There is more than 20 characters!!
